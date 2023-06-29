@@ -25,3 +25,5 @@ function makeGrid(rows, cols) {
         container.appendChild(cell).className = "grid-item";
     };
 };
+
+// change color

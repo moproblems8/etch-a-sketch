@@ -69,7 +69,18 @@ table {
     
     border-style: solid;
     border-width: 2px;
-    border-color: #27f314;
+    border-color: #0e3eb8;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0ab473;
 }
 
 .slide-container {
@@ -77,6 +88,7 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 
     border-style: solid;
     border-width: 2px;
@@ -105,4 +117,8 @@ table {
     border-width: 0.1px;
     border-color: #000000;
     background-color:rgb(255, 255, 255)
+}
+
+#container .grid-item:hover {
+    background-color: #000000;
 }
