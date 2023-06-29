@@ -83,6 +83,12 @@ table {
     border-color: #0ab473;
 }
 
+.options > * {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #9eb80d;
+}
+
 .slide-container {
     display: flex;
     flex-direction: column;
@@ -90,9 +96,6 @@ table {
     align-items: center;
     margin: 20px;
 
-    border-style: solid;
-    border-width: 2px;
-    border-color: #f314ca;
 }
 
 .slide-container .range-value {
