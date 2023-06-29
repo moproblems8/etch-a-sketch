@@ -1,6 +1,7 @@
 const container = document.getElementById("container");
 const rangeSliderValue = document.getElementById("range-slider");
 const rangeSliderTextOutput = document.getElementById("range-value");
+const resetButton = document.getElementById("reset-button");
 var gridItems;
 var sliderValue;
 
@@ -27,12 +28,22 @@ function makeGrid(rows, cols) {
         container.appendChild(cell).className = "grid-item";
     };
 
-    gridItems = document.querySelectorAll('.grid-item'); 
+    gridItems = document.querySelectorAll('.grid-item');
+    changeColor(gridItems);
 };
 
 // change color
-gridItems.forEach(gridItem => {
-    gridItem.addEventListener('mouseover', () => {
-        gridItem.style.backgroundColor = 'black';
+function changeColor(gridItems) {
+    gridItems.forEach(gridItem => {
+        gridItem.addEventListener('mouseover', () => {
+            gridItem.style.backgroundColor = 'black';
+        });
+    });
+}
+
+// reset grid
+resetButton.addEventListener('click', () => {
+    gridItems.forEach(gridItem => {
+        gridItem.style.backgroundColor = 'white';
     });
 });
