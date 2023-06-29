@@ -1,7 +1,7 @@
 const container = document.getElementById("container");
 const rangeSliderValue = document.getElementById("range-slider");
 const rangeSliderTextOutput = document.getElementById("range-value");
-var gridItems = document.querySelectorAll('.grid-item');
+var gridItems;
 var sliderValue;
 
 // initialize grid
@@ -26,11 +26,13 @@ function makeGrid(rows, cols) {
         let cell = document.createElement("div");
         container.appendChild(cell).className = "grid-item";
     };
+
+    gridItems = document.querySelectorAll('.grid-item'); 
 };
 
 // change color
 gridItems.forEach(gridItem => {
-    gridItem.addEventListener('click', () => {
+    gridItem.addEventListener('mouseover', () => {
         gridItem.style.backgroundColor = 'black';
     });
 });
