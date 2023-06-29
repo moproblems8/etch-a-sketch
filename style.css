@@ -60,12 +60,12 @@ table {
     font-weight: bold;
     text-align: center;
     padding: 20px;
-    margin-left: 325px;
+    margin-left: 400px;
 }
 
 .main {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     
     border-style: solid;
@@ -125,7 +125,6 @@ table {
     display: grid;
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
-    margin-left: 490px;
 
     border-style: solid;
     border-width: 2px;
@@ -155,7 +154,7 @@ table {
 }
 
 .plato {
-
+    margin-right: 100px;
 }
 
 .plato > img {
