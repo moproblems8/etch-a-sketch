@@ -98,6 +98,14 @@ table {
 
 }
 
+.colors {
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 .slide-container .range-value {
     padding: 10px;
 }

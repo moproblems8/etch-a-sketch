@@ -2,6 +2,8 @@ const container = document.getElementById("container");
 const rangeSliderValue = document.getElementById("range-slider");
 const rangeSliderTextOutput = document.getElementById("range-value");
 const resetButton = document.getElementById("reset-button");
+const colorButton = document.querySelectorAll("#color-button");
+var color = "black";
 var gridItems;
 var sliderValue;
 
@@ -36,7 +38,7 @@ function makeGrid(rows, cols) {
 function changeColor(gridItems) {
     gridItems.forEach(gridItem => {
         gridItem.addEventListener('mouseover', () => {
-            gridItem.style.backgroundColor = 'black';
+            gridItem.style.backgroundColor = color;
         });
     });
 }
@@ -45,5 +47,13 @@ function changeColor(gridItems) {
 resetButton.addEventListener('click', () => {
     gridItems.forEach(gridItem => {
         gridItem.style.backgroundColor = 'white';
+    });
+});
+
+// change color
+colorButton.forEach(colorButton => {
+    colorButton.addEventListener('click', () => {
+        color = colorButton.textContent.toLowerCase();
+        console.log(color);
     });
 });
