@@ -3,6 +3,7 @@ const rangeSliderValue = document.getElementById("range-slider");
 const rangeSliderTextOutput = document.getElementById("range-value");
 const resetButton = document.getElementById("reset-button");
 const colorButton = document.querySelectorAll("#color-button");
+const eraseButton = document.getElementById("erase-button");
 var color = "black";
 var gridItems;
 var sliderValue;
@@ -56,4 +57,10 @@ colorButton.forEach(colorButton => {
         color = colorButton.textContent.toLowerCase();
         console.log(color);
     });
+});
+
+// erase color
+eraseButton.addEventListener('click', () => {
+    color = 'white';
+    console.log(color);
 });
