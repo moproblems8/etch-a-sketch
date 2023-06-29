@@ -72,6 +72,21 @@ table {
     border-color: #27f314;
 }
 
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f314ca;
+}
+
+.slide-container .slide-value {
+    padding: 10px;
+}
+
 #container {
     width: 650px;
     height: 650px;

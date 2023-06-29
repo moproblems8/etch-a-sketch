@@ -9,4 +9,4 @@ function makeRows(rows, cols) {
   };
 };
 
-makeRows(16, 16);
+makeRows(8, 8);
