@@ -87,6 +87,7 @@ table {
     border-style: solid;
     border-width: 2px;
     border-color: #9eb80d;
+    margin: 10px;
 }
 
 .slide-container {
@@ -94,7 +95,6 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 
 }
 
