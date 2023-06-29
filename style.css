@@ -48,3 +48,24 @@ table {
 }
 
 /* end of reset */
+
+#container {
+    width: 650px;
+    height: 650px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f31414;
+}
+
+#container .grid {
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    background-color:rgb(17, 92, 162)
+}
