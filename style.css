@@ -30,8 +30,11 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-color: gray;
+    background-image: url('imgs/pencil_background.jpg');
+    background-size: contain;
+    font-family: 'Sofia', cursive;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -59,24 +62,16 @@ table {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    padding: 20px;
-    margin-left: 400px;
+    padding: 15px;
 }
 
 .main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
-    border-style: solid;
-    border-width: 2px;
-    border-color: #0e3eb8;
 }
 
 .main > * {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #0e3eb8;
     margin: 10px;
 }
 
@@ -88,13 +83,10 @@ table {
 
     border-style: solid;
     border-width: 2px;
-    border-color: #0ab473;
+    border-color: #000000;
 }
 
 .options > * {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #9eb80d;
     margin: 10px;
 }
 
@@ -147,10 +139,6 @@ table {
     font-weight: bold;
     text-align: center;
     padding: 26px;
-
-    border-style: solid;
-    border-width: 2px;
-    border-color: #18f314;
 }
 
 .plato {
@@ -161,4 +149,20 @@ table {
     width: 100%;
     height: 100%;
     transform: scaleX(-1);
+}
+
+#thought-bubble {
+    position: absolute;
+    height: 200px;
+    margin-top: -75px;
+    margin-left: 60px;
+}
+
+.thought-text {
+    position: absolute;
+    font-size: 50px;
+    margin-top: -30px;
+    margin-left: 100px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
