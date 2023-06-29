@@ -1,6 +1,8 @@
 const container = document.getElementById("container");
 const rangeSliderValue = document.getElementById("range-slider");
 const rangeSliderTextOutput = document.getElementById("range-value");
+var gridItems = document.querySelectorAll('.grid-item');
+var sliderValue;
 
 // initialize grid
 makeGrid(16, 16);
@@ -8,7 +10,7 @@ makeGrid(16, 16);
 // change grid size
 rangeSliderValue.oninput = function() {
 
-    const sliderValue = this.value;
+    sliderValue = this.value;
     rangeSliderTextOutput.innerHTML = sliderValue + 'x' + sliderValue;
 
     makeGrid(sliderValue, sliderValue);
@@ -27,3 +29,8 @@ function makeGrid(rows, cols) {
 };
 
 // change color
+gridItems.forEach(gridItem => {
+    gridItem.addEventListener('click', () => {
+        gridItem.style.backgroundColor = 'black';
+    });
+});
