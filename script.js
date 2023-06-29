@@ -3,6 +3,16 @@ const rangeSliderValue = document.getElementById("range-slider");
 const rangeSliderTextOutput = document.getElementById("range-value");
 
 
+// change grid size
+rangeSliderValue.oninput = function() {
+
+    const sliderValue = this.value;
+    rangeSliderTextOutput.innerHTML = sliderValue + 'x' + sliderValue;
+
+    makeGrid(sliderValue, sliderValue);
+};
+
+// create grid
 function makeGrid(rows, cols) {
     container.innerHTML = "";
 
@@ -15,13 +25,3 @@ function makeGrid(rows, cols) {
 };
 
 makeGrid(8, 8);
-
-// range slide
-
-rangeSliderValue.oninput = function() {
-
-    const sliderValue = this.value;
-    rangeSliderTextOutput.innerHTML = sliderValue + 'x' + sliderValue;
-
-    makeGrid(sliderValue, sliderValue);
-};
