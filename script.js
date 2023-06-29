@@ -2,6 +2,8 @@ const container = document.getElementById("container");
 const rangeSliderValue = document.getElementById("range-slider");
 const rangeSliderTextOutput = document.getElementById("range-value");
 
+// initialize grid
+makeGrid(16, 16);
 
 // change grid size
 rangeSliderValue.oninput = function() {
@@ -23,5 +25,3 @@ function makeGrid(rows, cols) {
         container.appendChild(cell).className = "grid-item";
     };
 };
-
-makeGrid(8, 8);
